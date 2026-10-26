@@ -6,25 +6,24 @@
 
 /* ---------- SELETOR DE TAG ---------- */
 
-/* aqui eu estilizo o body inteiro da pagina */
 body {
-    background-color: #14213d;       /* cor de fundo azul escuro */
-    color: #e5e5e5;                  /* cor do texto normal (cinza clarinho) */
-    font-family: 'Poppins', sans-serif; /* fonte do Google Fonts pro texto */
+    background-color: #14213d;
+    color: #e5e5e5;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    line-height: 1.6;                /* espaco entre as linhas pra ler melhor */
-    max-width: 900px;                /* deixo a pagina com largura maxima */
-    margin: 0 auto;                  /* margin auto centraliza a pagina na tela */
-    padding: 20px;                   /* espaco interno pro texto nao colar na borda */
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* titulo principal: centralizado como o professor pediu */
+/* titulo principal: centralizado */
 h1 {
     text-align: center;
     font-size: 56px;
-    text-transform: uppercase;       /* deixa tudo em maiusculo */
-    letter-spacing: 3px;             /* espaco entre as letras */
-    text-shadow: 2px 2px 4px #000000; /* sombra no texto */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px #000000;
     margin-bottom: 10px;
 }
 
@@ -34,20 +33,19 @@ img {
     height: auto;
     border-radius: 10px;
     display: block;
-    margin: 15px auto;               /* centraliza a imagem */
+    margin: 15px auto;
 }
 
 
 /* ---------- AGRUPAMENTO DE SELETORES ---------- */
 
-/* aqui eu juntei h1, h2 e h3 com virgula pra dar a mesma cor e fonte pra todos */
+
 h1, h2, h3 {
-    color: #fca311;                  /* titulos em laranja/dourado, nao é preto */
-    font-family: 'Bebas Neue', sans-serif; /* outra fonte do Google Fonts */
+    color: #fca311;
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: normal;
 }
 
-/* subtitulos h2 e h3 com tamanho maior */
 h2 {
     font-size: 32px;
     text-align: center;
@@ -61,22 +59,20 @@ h3 {
 
 /* ---------- SELETOR DE ID ---------- */
 
-/* o cabecalho tem id="cabecalho", entao uso # */
 #cabecalho {
     padding: 20px;
     margin-bottom: 30px;
-    border-bottom-width: 4px;        /* propriedades de borda separadas */
+    border-bottom-width: 4px;
     border-bottom-style: solid;
     border-bottom-color: #fca311;
 }
 
-/* a lista dos filmes tem id="lista-filmes" */
-/* troquei o numero normal por numero romano (I, II, III) */
+
 #lista-filmes {
     list-style-type: upper-roman;
-    list-style-position: inside;     /* o numero fica dentro da caixa do cartao */
-    padding: 0;                      /* tirei o espaco padrao da lista */
-    color: #fca311;                  /* cor dos numeros */
+    list-style-position: inside;
+    padding: 0;
+    color: #fca311;
     font-size: 28px;
     font-family: 'Bebas Neue', sans-serif;
 }
@@ -84,27 +80,24 @@ h3 {
 
 /* ---------- SELETOR DE CLASSE ---------- */
 
-/* a classe "destaque" é o paragrafo de introducao */
 .destaque {
     text-align: center;
-    font-style: italic;              /* texto em italico */
+    font-style: italic;
     font-size: 18px;
 }
 
-/* cada filme (li com class="filme") virou um cartao */
-/* aqui eu uso as 3 coisas do box model: margin, padding e border */
+
 .filme {
     background-color: #1f2f50;
-    margin: 0 0 30px 0;              /* margin: espaco de fora (embaixo do cartao) */
-    padding: 20px;                   /* padding: espaco de dentro do cartao */
-    border-width: 2px;               /* border: a borda em volta */
+    margin: 0 0 30px 0;
+    padding: 20px;
+    border-width: 2px;
     border-style: solid;
     border-color: #fca311;
-    border-radius: 15px;             /* deixa os cantos arredondados */
+    border-radius: 15px;
 }
 
-/* seletor de descendente: so o h2 que esta dentro de .filme */
-/* coloquei display inline pra ficar do lado do numero romano */
+
 .filme h2 {
     display: inline;
     margin-left: 10px;
@@ -119,10 +112,10 @@ h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    text-decoration: none;           /* tira o sublinhado do link */
+    text-decoration: none;
     padding: 10px 15px;
     margin-top: 10px;
-    border: 2px solid #fca311;       /* borda escrita no jeito resumido */
+    border: 2px solid #fca311;
     border-radius: 8px;
 }
 
@@ -136,11 +129,10 @@ h3 {
 .copia {
     margin-bottom: 40px;
     padding: 20px 25px;
-    border-top: 4px solid #fca311;   /* risco em cima pra separar cada filme */
+    border-top: 4px solid #fca311;
     border-radius: 10px;
 }
 
-/* o titulo de cada secao copiada fica sublinhado */
 .copia h2 {
     text-decoration: underline;
 }
@@ -150,7 +142,7 @@ h3 {
     background-color: #1f2f50;
     padding: 15px 25px;
     margin-bottom: 30px;
-    border-left: 6px solid #fca311;  /* borda so do lado esquerdo */
+    border-left: 6px solid #fca311;
     border-radius: 5px;
 }
 
@@ -158,12 +150,11 @@ h3 {
 .criterios {
     list-style-type: square;
     list-style-position: outside;
-    padding-left: 25px;              /* espaco pro quadradinho aparecer */
-    background-color: transparent;   /* tiro o fundo e a borda que o ul tem la embaixo */
+    padding-left: 25px;
+    background-color: transparent;
     border: none;
 }
 
-/* o li dentro da lista de criterios fica com um espacinho embaixo */
 .criterios li {
     margin-bottom: 5px;
 }
@@ -176,21 +167,18 @@ ul {
     list-style-type: none;
     padding: 15px;
     background-color: #1f2f50;
-    border: 1px dashed #fca311;      /* borda tracejada */
+    border: 1px dashed #fca311;
     border-radius: 10px;
 }
 
-/* o strong (Sinopse:) fica com a cor dos titulos */
 strong {
     color: #fca311;
 }
 
-/* links normais (os do youtube) */
 a {
     color: #8ecae6;
 }
 
-/* rodape */
 footer {
     text-align: center;
     font-size: 13px;
